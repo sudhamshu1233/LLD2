@@ -3,8 +3,7 @@ package services;
 import models.Floor;
 import models.Gates;
 import models.ParkingLot;
-import models.ParkingSpot;
-import repositries.ParkingLotRepositry;
+import repository.ParkingLotRepositry;
 
 import java.util.List;
 

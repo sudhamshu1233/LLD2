@@ -1,7 +1,6 @@
-package repositries;
+package repository;
 
 import models.Ticket;
-import services.TicketService;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,12 +1,8 @@
-package repositries;
+package repository;
 
-import models.Floor;
-import models.Gates;
 import models.ParkingLot;
-import models.ParkingSpot;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class ParkingLotRepositry {

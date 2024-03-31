@@ -1,7 +1,6 @@
 package services;
 
 import models.ParkingAttendant;
-import repositries.ParkingAttendantRepository;
 
 public class ParkingAttendantService {
     public ParkingAttendant createParkingAttendant(Integer employeeId,String name)

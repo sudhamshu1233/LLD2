@@ -2,7 +2,7 @@ package services;
 
 import models.Floor;
 import models.ParkingSpot;
-import repositries.FloorRepositry;
+import repository.FloorRepositry;
 
 import java.util.List;
 

@@ -3,8 +3,8 @@ import models.*;
 import projectenums.ParkingSpotStatus;
 import projectenums.VehicleType;
 import projectexcecption.ParkingSpotFull;
-import repositries.ParkingLotRepositry;
-import repositries.TicketRepositry;
+import repository.ParkingLotRepositry;
+import repository.TicketRepositry;
 
 import java.time.LocalDateTime;
 import java.util.List;

@@ -4,7 +4,7 @@ import models.Payment;
 import models.Ticket;
 import projectenums.PaymentMode;
 import projectenums.PaymentStatus;
-import repositries.PaymentRepository;
+import repository.PaymentRepository;
 
 import java.time.LocalDateTime;
 

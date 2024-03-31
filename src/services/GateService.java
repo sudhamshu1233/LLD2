@@ -3,7 +3,7 @@ package services;
 import models.Gates;
 import models.ParkingAttendant;
 import projectenums.GateType;
-import repositries.GateRepository;
+import repository.GateRepository;
 
 public class GateService {
     public Gates createGates(Integer id,GateType gateType)

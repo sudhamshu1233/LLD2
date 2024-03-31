@@ -1,4 +1,4 @@
-package repositries;
+package repository;
 
 import models.ParkingSpot;
 import projectenums.ParkingSpotStatus;

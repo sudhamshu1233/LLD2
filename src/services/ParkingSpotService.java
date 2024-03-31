@@ -2,7 +2,7 @@ package services;
 
 import models.ParkingSpot;
 import projectenums.VehicleType;
-import repositries.ParkingSpotRepositry;
+import repository.ParkingSpotRepositry;
 
 public class ParkingSpotService {
     public ParkingSpot createParkingSpot(VehicleType vehicleType, Integer floorNumber)

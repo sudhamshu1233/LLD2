@@ -3,8 +3,7 @@ package services;
 import models.Gates;
 import models.Invoice;
 import models.Payment;
-import models.Ticket;
-import repositries.InvoiceRepository;
+import repository.InvoiceRepository;
 
 import java.time.LocalDateTime;
 
