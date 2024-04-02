@@ -5,17 +5,19 @@ import dto.FloorCreatorRequest;
 import models.*;
 import projectenums.GateType;
 import projectenums.VehicleType;
-import services.FloorService;
-import services.GateService;
-import services.ParkingLotService;
-import services.ParkingSpotService;
+import services.*;
 
 public class ParkingLotController {
+    ParkingLotService parkingLotService;
+    public ParkingLotController(ParkingLotService parkingLotService)
+    {
+        this.parkingLotService = parkingLotService;
+    }
 
     public CreateParkingLotResponse createParkingLot(CreateParkingLotRequest request)
     {
 
-        ParkingLot parkingLot = new ParkingLotService().createParkingLot(request.getFloors(),
+        ParkingLot parkingLot = parkingLotService.createParkingLot(request.getFloors(),
                 request.getAddress(),
                 request.getGates(),
                 request.getId());

@@ -6,13 +6,18 @@ import projectenums.GateType;
 import services.GateService;
 
 public class GatesController {
+    GateService gateService;
+    public GatesController(GateService gateService)
+    {
+        this.gateService = gateService;
+    }
     public Gates createGates(Integer id, GateType gateType)
     {
-        return new GateService().createGates(id,gateType);
+        return gateService.createGates(id,gateType);
     }
 
     public void setParkingAttendantToGate(Integer gateId,ParkingAttendant parkingAttendant)
     {
-        new GateService().setParkingAttendantToGate(gateId,parkingAttendant);
+        gateService.setParkingAttendantToGate(gateId,parkingAttendant);
     }
 }

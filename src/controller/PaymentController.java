@@ -6,10 +6,15 @@ import projectenums.PaymentMode;
 import services.PaymentService;
 
 public class PaymentController {
+    PaymentService paymentService;
+    public PaymentController(PaymentService paymentService)
+    {
+        this.paymentService = paymentService;
+    }
     public Payment makePayment(PaymentMode paymentMode, Ticket ticket)
     {
 
-        return new PaymentService().makePayment(paymentMode,ticket);
+        return paymentService.makePayment(paymentMode,ticket);
 
     }
 

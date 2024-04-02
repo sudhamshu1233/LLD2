@@ -5,8 +5,7 @@ import models.ParkingAttendant;
 public class ParkingAttendantService {
     public ParkingAttendant createParkingAttendant(Integer employeeId,String name)
     {
-        ParkingAttendant newParkingAttendant = ParkingAttendant.builder().employeeId(employeeId).name(name).build();
-//        ParkingAttendantRepository.getParkingAttendantRepositoryInstance().addparkingAttendant(newParkingAttendant);
-        return newParkingAttendant;
+        //        ParkingAttendantRepository.getParkingAttendantRepositoryInstance().addparkingAttendant(newParkingAttendant);
+        return ParkingAttendant.builder().employeeId(employeeId).name(name).build();
     }
 }
